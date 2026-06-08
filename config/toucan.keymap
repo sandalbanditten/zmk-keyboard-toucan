@@ -9,6 +9,8 @@
 #define SYM  2
 #define CON  3
 
+// TODO: Mod tap-once/hold behavior
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -58,7 +60,7 @@
             bindings = <
                 &mo TAB   &none        &none        &none        &none        &none         &none  &none   &none    &none &none &kp BSPC
                 &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none  &none   &none    &none &none &none 
-                &bt LSHFT &none        &none        &none        &none        &none         &none  &none   &none    &none &none &none 
+                &bt LSHFT &none        &none        &none        &none        &none         &none  &none   &none    &none &none &kp DEL
                                                     &kp LGUI     &kp SPACE    &mo NAV       &mo 2  &kp RET &kp RALT
             >;
         };
